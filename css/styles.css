@@ -1,1 +1,71 @@
-/* CSS here :) */
+body{
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.nav-bar{
+    background-color: #3a3633;
+    display: flex;
+    height: 50px;
+}
+
+.logo{
+    display: inline;
+    margin-left: 10px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+ul{
+}
+
+li {
+    color: white;
+    display: inline;
+}
+
+.title-section{
+    background-image: url("/imgs/bg.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cool-section{
+    background-color: #3a3633;
+    color: white;
+}
+
+.feature-section{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    
+}
+
+.feature1 {
+    margin: 20px;
+    padding:20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #d6d6d6;
+
+}
+.feature2 {
+    margin: 20px;
+    padding:20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #d6d6d6;
+
+}
+
+.feature3 {
+    margin: 20px;
+    padding:20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #d6d6d6;
+
+}
