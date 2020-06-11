@@ -6,66 +6,129 @@ body{
 .nav-bar{
     background-color: #3a3633;
     display: flex;
-    height: 50px;
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    top: 0;
+    left: 0;
 }
 
 .logo{
-    display: inline;
-    margin-left: 10px;
-    padding: 5px;
-    height: 40px;
-    width: 40px;
+    position: relative;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.dropdown{
 }
 
 ul{
+    position: absolute;
+    right: 0;
 }
 
 li {
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
     color: white;
-    display: inline;
+    display: inline-block;
 }
 
-.title-section{
+.mobile-dropdown{
+    display: none;
+}
+
+.background-image{
     background-image: url("/imgs/bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.cool-section{
-    background-color: #3a3633;
-    color: white;
+.title-box{
+    margin: auto;
+    width: 1000px;
+    height: 300px;
+    object-fit: none;
+    object-position: 50%;
+    border: 5px solid white;
 }
 
 .feature-section{
-    height: 400px;
     width: 100%;
     display: flex;
-    
+    text-align: center;
 }
 
 .feature1 {
-    margin: 20px;
-    padding:20px;
+    width:calc(100%/3);
+    margin: 50px;
+    padding:30px;
     border: none;
     border-radius: 8px;
     box-shadow: 0 0 10px #d6d6d6;
 
 }
 .feature2 {
-    margin: 20px;
-    padding:20px;
+    width:calc(100%/3);
+    margin: 50px;
+    padding:30px;
     border: none;
     border-radius: 8px;
     box-shadow: 0 0 10px #d6d6d6;
-
 }
 
 .feature3 {
-    margin: 20px;
-    padding:20px;
+    width:calc(100%/3);
+    margin: 50px;
+    padding:30px;
     border: none;
     border-radius: 8px;
     box-shadow: 0 0 10px #d6d6d6;
+}
 
+.cool-section{
+    background-color: #3a3633;
+    color: white;
+    width: 100%;
+    min-height: 350px;
+}
+
+.cool-text{
+    padding: 25px;
+    width: auto;
+    max-width: 1000px ;
+    height: 300px;
+}
+
+.slick-section{
+    background-color: royalblue; 
+    background-image: linear-gradient(to left,royalblue , white);
+    background-position: top center;
+    background-size: cover;
+    min-height: 350px;
+}
+
+
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 38px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+h5{
+    font-size: 16px ;
 }
