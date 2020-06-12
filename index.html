@@ -10,48 +10,56 @@
   </head>
 
   <body>
+    <a name="top"></a>
     <nav>
       <div class="nav-bar">
-          <img class="logo" src="imgs/logo.svg" alt="logo">
-        <div class="dropdown">
-          <ul>
-            <li>Features</li>
-            <li>Advantages</li>
-            <li>Gallery</li>
-            <li>Products</li>
-          </ul>
+        <a href="#top"><img class="logo" src="imgs/logo.svg" alt="logo"></a>
           <img class="mobile-dropdown" src="imgs/menu.svg">
-        </div>
+        <!-- <div class="dropdown"> -->
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#features">Features</a></li>
+            <li class="nav-item"><a href="#advantages">Advantages</a></li>
+            <li class="nav-item"><a href="#gallery">Gallery</a></li>
+            <li class="nav-item">Products</li>
+          </ul>
+        <!-- </div> -->
       </div>
     </nav>
     <section class="title-section">
       <div class="background-image">
         <div class="title-box">
-          <h1>Introducing Falcon 9</h1>
-          <h2>We make dreams come true</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim 
-            veniam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim 
-            veniam.</p>
+          <div class="main-title">
+            <h1>Introducing Falcon 9</h1>
+          </div>
+          <div class="sub-title">
+            <div class="sub-header">
+              <h2>We make dreams come true</h2>
+            </div>
+            <div class="sub-filler">
+              <p>Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim 
+                veniam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim 
+                veniam.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="feature-section">
-      <div class="feature1">
+    <section id="features" class="feature-section">
+      <div class="feature">
         <img src="imgs/icon1.svg">
         <h5>Amazing Feature 1</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud 
-          exercitation ullamco laboris nisi ut aliquip ex ea 
-          commodo consequat.</p>
+          exercitation.</p>
           <button>Get it</button>
       </div>
-      <div class="feature2">
+      <div class="feature">
         <img src="imgs/icon2.svg">
         <h5>Amazing Feature 2</h5>
         <p>Duis aute irure dolor in reprehenderit in voluptate
@@ -59,7 +67,7 @@
           Excepteur sint occaecat cupidatat non proident.</p>
           <button>Sell it</button>
       </div>
-      <div class="feature3">
+      <div class="feature">
         <img src="imgs/icon3.svg">
         <h5>Amazing Feature 3</h5>
         <p>Curabitur augue lorem, dapibus quis, laoreet et, 
@@ -68,31 +76,31 @@
           <button>Do it</button>
       </div>
     </section>
-    <section class="cool-section">
+    <section id="advantages" class="cool-section">
       <div class="cool-text">
         <h3>Some cool text</h3>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam.</h4>
+          <div class="hover-box">
+            <h5>This looks cool</h5>
+            <p>Hover me if you like random animations</p>
+          </div>
       </div>
     </section>
-    <div class="hover-box">
-      <h5>This looks cool</h5>
-      <p>Hover me if you like random animations</p>
-    </div>
     <section class="slick-section">
       <div class="slick-text">
         <h3>Slick gradient</h3>
         <h4>Lorem ipsum?</h4>
       </div>
     </section>
-    <section class="photo-section">
-      <img src="imgs/tesla.jpg">
-      <img src="imgs/procat.jpg">
-      <img src="imgs/hyperloop.jpg">
-      <img src="imgs/sneakycat.jpg">
-      <img src="imgs/bfr.jpeg">
-      <img src="imgs/funnycat.jpg">
+    <section id="gallery" class="photo-section">
+      <img class="grid-item" src="imgs/tesla.jpg">
+      <img class="grid-item" src="imgs/procat.jpg">
+      <img class="grid-item" src="imgs/hyperloop.jpg">
+      <img class="grid-item sneaky" src="imgs/sneakycat.jpg">
+      <img class="grid-item" src="imgs/bfr.jpeg">
+      <img class="grid-item" src="imgs/funnycat.jpg">
     </section>
     <section class="mailing-list-section">
       <form>
@@ -104,29 +112,37 @@
       </form>
     </section>
     <footer>
-      <div class="footer1">
-        <a href="#">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Legal Notes</a>
-        <a href="#">Copyright</a>
+      <div class="footer">
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">About Us</a></li>
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+          <li><a class="footer-link" href="#">Legal Notes</a></li>
+          <li><a class="footer-link" href="#">Copyright</a></li>
+        </ul>
       </div>
-      <div class="footer2">
-        <a href="#">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Legal Notes</a>
-        <a href="#">Copyright</a>
+      <div class="footer">
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">About Us</a></li>
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+          <li><a class="footer-link" href="#">Legal Notes</a></li>
+          <li><a class="footer-link" href="#">Copyright</a></li>
+        </ul>
       </div>
-      <div class="footer3">
-        <a href="#">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Legal Notes</a>
-        <a href="#">Copyright</a>
+      <div class="footer">
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">About Us</a></li>
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+          <li><a class="footer-link" href="#">Legal Notes</a></li>
+          <li><a class="footer-link" href="#">Copyright</a></li>
+        </ul>
       </div>
-      <div class="footer4">
-        <a href="#">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Legal Notes</a>
-        <a href="#">Copyright</a>
+      <div class="footer">
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">About Us</a></li>
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+          <li><a class="footer-link" href="#">Legal Notes</a></li>
+          <li><a class="footer-link" href="#">Copyright</a></li>
+        </ul>
       </div>
     </footer>
   </body>
