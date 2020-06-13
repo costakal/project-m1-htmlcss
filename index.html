@@ -13,16 +13,31 @@
     <a name="top"></a>
     <nav>
       <div class="nav-bar">
-        <a href="#top"><img class="logo" src="imgs/logo.svg" alt="logo"></a>
-          <img class="mobile-dropdown" src="imgs/menu.svg">
-        <!-- <div class="dropdown"> -->
+        <div>
+          <a href="#top"><img class="logo" src="imgs/logo.svg" alt="logo"></a>
+        </div>
+          <img class="mobile-nav" src="imgs/menu.svg">
           <ul class="nav-list">
             <li class="nav-item"><a href="#features">Features</a></li>
             <li class="nav-item"><a href="#advantages">Advantages</a></li>
             <li class="nav-item"><a href="#gallery">Gallery</a></li>
-            <li class="nav-item">Products</li>
+            <li class="nav-item products"><a class="products-item">Products</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a class="dropdown-items">Falcon 9</a></li>
+                  <li><a class="dropdown-items">Model S</a></li>
+                  <li><a class="dropdown-items">iPhone</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
-        <!-- </div> -->
+      </div>
+      <div class="mobile-nav-list">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
       </div>
     </nav>
     <section class="title-section">
@@ -95,20 +110,42 @@
       </div>
     </section>
     <section id="gallery" class="photo-section">
-      <img class="grid-item" src="imgs/tesla.jpg">
-      <img class="grid-item" src="imgs/procat.jpg">
-      <img class="grid-item" src="imgs/hyperloop.jpg">
-      <img class="grid-item sneaky" src="imgs/sneakycat.jpg">
-      <img class="grid-item" src="imgs/bfr.jpeg">
-      <img class="grid-item" src="imgs/funnycat.jpg">
+      <div class="grid-item">
+        <img src="imgs/tesla.jpg">
+        <span class="grid-item-text">Our flagship car: The Model S</span>
+      </div>
+      <div class="grid-item">
+        <img src="imgs/procat.jpg">
+        <span class="grid-item-text">Handsome</span>
+      </div>
+      <div class="grid-item">
+        <img src="imgs/hyperloop.jpg">
+        <span class="grid-item-text">Introducing: The Hyperloop</span>
+      </div>
+      <div class="grid-item">
+        <img src="imgs/sneakycat.jpg">
+        <span class="grid-item-text">So sneaky</span>
+      </div>
+      <div class="grid-item">
+        <img src="imgs/bfr.jpeg">
+        <span class="grid-item-text">BFR - Falcon Rocket</span>
+      </div>
+      <div class="grid-item">
+        <img src="imgs/funnycat.jpg">
+        <span class="grid-item-text">So much fun</span>
+      </div>
     </section>
     <section class="mailing-list-section">
-      <form>
+      <form class="mailing-list-form">
         <label for="email">Register to our mailing list</label>
-        <input type="email" id="email">
-        <input type="image" src="imgs/send.svg">
-        <label for="catimgs">Send me daily cat images</label>
-        <input type="checkbox" id="catimgs">
+        <div class="send-email">
+          <input type="email" id="email">
+          <input class="send-button" type="image" src="imgs/send.svg">
+        </div>
+        <div class="more-cats">
+          <input type="checkbox" id="catimgs">
+          <label for="catimgs">Send me daily cat images</label>
+        </div>
       </form>
     </section>
     <footer>
