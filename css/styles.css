@@ -104,15 +104,16 @@ body{
     transition: 0.3s;
 }
 
-.mobile-nav:hover {
+.hamburger:hover {
     opacity: 0.6;
 }
 
 .mobile-nav-list{
-    position: fixed;
+    position: absolute;
     display: none;
     background-color: #3a3633;
     top: 44px;
+    right: 0;
     width: 100vw;
     text-align: center;
     z-index: 98;
@@ -210,12 +211,12 @@ body{
 }
 
 .feature > button{
-    padding: 8px 120px;
+    padding: 8px 125px;
     color: white;
     background-color: #3a3633;
     position: absolute;
     bottom: 20px;
-    right: 46px;
+    right: 40px;
     text-decoration: none;
     border: none;
 }
@@ -256,12 +257,14 @@ body{
 
 .hover-box:hover {
     animation-name: box-flip;
-    animation-fill-mode: forwards;
-    animation-duration: 6s;
+    animation-fill-mode: none;
+    animation-duration: 4s;
+    animation-timing-function: linear;
 }
 
 @keyframes box-flip {
-    50% {transform: rotate(180deg) translateX(-300px)}
+    50% {transform: translateX(300px) rotate(180deg);}
+    100% {transform: translateX(300px) rotate(360deg) scale(0);}
 }
 
 .hover-box > h5{
@@ -424,7 +427,6 @@ h5{
         display: block;
     }
 
-
     .title-box{
         flex-direction: column;
         border: none;
@@ -463,16 +465,30 @@ h5{
     }
 
     .hover-box{
-        height: 120px;
-        width: 250px;
+        position: absolute;
+        top: 295px;
+        left: 50px;
+        height: 80px;
+        width: 150px;
     }
 
     .hover-box > h5{
         margin: 15px 0;
+        font-size: 12px;
     }
 
     .hover-box > p{
-        font-size: 14px;
+        font-size: 9px;
+    }
+
+    .hover-box:hover {
+        animation-name: box-flip;
+        animation-fill-mode: none;
+        animation-duration: 2s;
+    }
+    
+    @keyframes box-flip {
+        100% {transform: rotate(360deg)}
     }
 
     .slick-text > h3{
